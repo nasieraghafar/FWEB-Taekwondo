@@ -1,0 +1,150 @@
+/* Container for the Calendar */
+.event-calendar-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Header section with title and button */
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Header Title */
+.event-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Create Event Button */
+.create-event-button {
+  background-color: #f43a3a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.create-event-button:hover {
+  background-color: #d03535;
+  transform: scale(1.05);
+}
+
+/* FullCalendar Styling */
+.fc {
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* Calendar Toolbar */
+.fc-toolbar {
+  background-color: #ed3943;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Event Styling */
+.fc-daygrid-event {
+  border-radius: 10px;
+  background-color: #f43a3a;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.fc-daygrid-event:hover {
+  background-color: #d03535;
+  transform: scale(1.08);
+}
+
+/* Modal Styling */
+.modal-content {
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.modal-header {
+  background-color: #f43a3a;
+  color: white;
+  border-radius: 12px 12px 0 0;
+  font-size: 20px;
+}
+
+.modal-body {
+  padding: 25px;
+}
+
+.form-control {
+  font-size: 18px;
+  padding: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .event-calendar-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .event-calendar-container {
+    max-width: 95%;
+  }
+
+  .fc-toolbar {
+    flex-direction: column;
+    font-size: 18px;
+  }
+
+  .create-event-button {
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-calendar-container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .fc-toolbar {
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  .create-event-button {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}
+
+.fc .fc-daygrid-day-number,  /* Numbers of days */
+.fc .fc-col-header-cell a {  /* Day names (Mon, Tue, etc.) */
+  color: black !important;  /* Make text black */
+  text-decoration: none !important; /* Remove underline */
+  font-weight: bold;
+}
+

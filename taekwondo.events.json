@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "67a64031ecb1fe96f09c0b47"
+  },
+  "title": "Training",
+  "date": "2025-02-09"
+},
+{
+  "_id": {
+    "$oid": "67a6ff77ce29096d82140a00"
+  },
+  "title": "Valentines Day",
+  "date": "2025-02-14"
+},
+{
+  "_id": {
+    "$oid": "67a872dd21d3f223ad554da8"
+  },
+  "title": "Event",
+  "date": "2025-02-12"
+}]

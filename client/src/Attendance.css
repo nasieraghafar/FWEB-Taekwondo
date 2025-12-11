@@ -1,0 +1,101 @@
+.attendance-container {
+    width: 80%;
+    margin: auto;
+}
+
+.date-picker {
+    margin-bottom: 20px;
+}
+
+.date-picker label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.date-picker input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.attendance-table th,
+.attendance-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.present-btn {
+    background-color: #28a745;
+    /* Green */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.present-btn:hover {
+    background-color: #218838;
+    /* Darker Green on hover */
+}
+
+.absent-btn {
+    background-color: #dc3545;
+    /* Red */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.absent-btn:hover {
+    background-color: #c82333;
+    /* Darker Red on hover */
+}
+
+/* Profile Image Styling */
+.student-profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.attendance-buttons {
+    display: flex;
+    gap: 10px;
+    /* Adds spacing between the buttons */
+    justify-content: center;
+    /* Centers the buttons horizontally */
+    align-items: center;
+    /* Ensures vertical alignment */
+    min-height: 75px;
+}
+
+.attendance-status.Present {
+    color: green;
+}
+
+.attendance-status.Absent {
+    color: red;
+}
+
+.attendance-status.NotMarked {
+    color: gray;
+}
+
+.attendance-status {
+    font-weight: bold;
+    text-transform: uppercase;
+}

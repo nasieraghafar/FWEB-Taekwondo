@@ -1,0 +1,74 @@
+.add-member-card {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: -150px;
+    font-weight: bold;
+  }
+  
+  .add-member-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .form-column {
+    flex: 1;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    color: black;
+  }
+  
+  .add-update-member-button-container {
+    text-align: center;
+    margin-top: 20px;
+    
+  }
+  
+  .add-update-member-button {
+    background-color: #f43a3a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+  .add-member-button:hover {
+    background-color: #d83434;
+  }
+  

@@ -1,0 +1,353 @@
+html {
+  overflow-y: scroll;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000; 
+  color: #ffffff;
+  padding: 10px 20px;
+  position: fixed; 
+  top: 0;
+  width: 100%; 
+  z-index: 1000; 
+}
+
+
+
+.navbar-header {
+  display: flex;
+  align-items: center; /* Aligns logo and title vertically */
+  justify-content: flex-start; /* Aligns content to the left */
+  padding: 10px 0;
+}
+
+/* Logo styles */
+.navbar-logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px; /* Adds spacing between the logo and the title */
+}
+
+/* Title styles */
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content {
+  margin-top: 100px; /* Adjust this value to match the navbar's height */
+}
+
+/* Links container */
+.navbar-links-container {
+  width: 100%; /* Full width for red background */
+  background-color: #ed3943; /* Red background for the links row */
+  text-align: center;
+  padding: 10px 0; /* Add padding for height */
+  margin-top: 0px;
+}
+
+/* Links styles */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Aligns the links in a row */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0 20px; /* Adds spacing between links */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #000000; /* White text */
+  font-size: 16px;
+  font-weight: bold
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+  color: #000000
+}
+
+/* Login Card */
+.login-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.9); /* Black with transparency */
+  padding: 50px; /* Increase padding for a larger card */
+  border-radius: 10px;
+  color: white;
+  width: 600px; /* Make the card wider */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-weight: bold; /* Make all text in the card bold */
+  margin-top: -120px; /* Lower the card */
+}
+
+.login-card form {
+display: flex;
+flex-direction: column;
+}
+
+.login-card form div {
+margin-bottom: 20px;
+}
+
+.login-card label {
+display: block;
+font-size: 16px; /* Larger label font size */
+margin-bottom: 8px;
+font-weight: bold; /* Bold labels */
+}
+
+.login-card input[type="email"],
+.login-card input[type="password"] {
+width: 100%;
+padding: 12px; /* Increase padding for inputs */
+border: none;
+border-radius: 5px;
+font-size: 14px;
+font-weight: bold; /* Bold input text */
+}
+
+.login-card .forgot-password {
+  display: block;
+  margin-top: 50px; /* Increase spacing above the link */
+  font-size: 15px;
+  text-align: right;
+  color: #f43a3a;
+  text-decoration: none;
+  font-weight: bold; /* Bold forgot password link */
+}
+
+.login-card .forgot-password:hover {
+text-decoration: underline;
+}
+
+.login-button {
+background-color: #f43a3a;
+color: white;
+border: none;
+padding: 15px; /* Bigger button */
+font-size: 18px; /* Larger font size */
+border-radius: 5px;
+cursor: pointer;
+margin-bottom: 10px;
+font-weight: bold; /* Bold button text */
+}
+
+.register-button {
+background: none;
+color: white;
+border: 1px solid white;
+padding: 15px; /* Bigger button */
+font-size: 18px; /* Larger font size */
+border-radius: 5px;
+cursor: pointer;
+font-weight: bold; /* Bold button text */
+}
+
+.language-button:hover,
+.login-button:hover,
+.register-button:hover {
+background-color: #333;
+color: #f43a3a;
+}
+
+/* For radio button labels */
+.login-card input[type="radio"] + label {
+font-weight: bold;
+}
+
+.heading-container {
+  padding: 20px; /* Add space around the heading */
+}
+
+.public-heading-left {
+  text-align: left; /* Align heading to the left */
+  margin-bottom: 20px; /* Add space below the heading */
+  margin-top: 160px;
+  color: #ffffff;
+}
+
+.heading-left {
+  text-align: left; /* Align heading to the left */
+  margin-bottom: 10px; /* Add space below the heading */
+  margin-top: 20px;
+}
+
+.table-container {
+  padding: 20px; /* Add space around the table */
+  margin-top: 0px;
+  
+}
+
+/* Flex container for left and right columns */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Add space between columns */
+  width: 100%; /* Ensure it takes full width */
+  min-height: 100%; /* Ensure height remains consistent */
+}
+
+/* Left column: Heading and filters */
+.left-column {
+  flex: 1; /* Take up 1 part of the space */
+  max-width: 300px; /* Set a maximum width for the left column */
+  margin-top: -110px;
+
+}
+
+.public-left-column {
+  flex: 1; /* Take up 1 part of the space */
+  max-width: 300px; /* Set a maximum width for the left column */
+  margin-top: -230px;
+
+}
+
+.heading-left {
+  text-align: left; /* Align the heading to the left */
+  margin-bottom: 20px; /* Add spacing below the heading */
+  color: #ffffff;
+}
+
+.filter-container {
+  padding: 15px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  background-color: #000000; /* Light gray background for filter section */
+}
+
+.filter-container input,
+.filter-container select {
+  background-color: #000000; /* Dark gray input background */
+  color: #000000; /* White text */
+  border: 1px solid #ffffff; /* White border for inputs */
+}
+
+.filter-container h5 {
+  color: #ffffff; /* White text for section headers */
+}
+
+.filter-container .form-control {
+  background-color: #ffffff; /* Darker input box */
+  color: #000000; /* White text */
+  border: 1px solid #ffffff; /* White border */
+}
+
+.filter-container .form-control::placeholder {
+  color: #000000; /* Light gray placeholder text */
+}
+
+/* Right column: Table */
+.right-column {
+  flex: 3; /* Take up 3 parts of the space */
+  margin-top: -15px;
+  background-color: #ffffff; /* White background for the table */
+  padding: 20px; /* Add padding inside the column */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #000000; /* Optional border for better definition */
+}
+
+.admin-right-column {
+  flex: 3; /* Take up 3 parts of the space */
+  margin-top: -35px;
+  background-color: #ffffff; /* White background for the table */
+  padding: 20px; /* Add padding inside the column */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #000000; /* Optional border for better definition */
+
+}
+
+.container {
+  position: relative; /* Ensures the button stays within the bounds of the container */
+  padding: 20px; /* Adds padding around the content */
+}
+
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Base button style */
+.action-button {
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 8px 16px; /* Padding for size */
+  font-size: 14px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: all 0.2s ease; /* Smooth hover transition */
+}
+
+.update-button {
+  background-color: #4caf50;
+}
+
+.update-button:hover {
+  background-color: #3e8e41;
+}
+
+.delete-button {
+  background-color: #f43a3a;
+}
+
+.delete-button:hover {
+  background-color: #d03535;
+}
+
+.add-member-button-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.add-member-button {
+  position: absolute;
+  top: -65px;
+  right: 0px;
+  background-color: #f43a3a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.add-member-button:hover {
+  background-color: #d03535;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

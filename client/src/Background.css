@@ -1,0 +1,31 @@
+.background-section {
+    position: relative;
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    height: 100vh; /* Makes the section take the full viewport height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    overflow: hidden; /* Prevents any content from overflowing */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes padding */
+    box-sizing: border-box; /* Ensures padding is included in height/width calculations */
+  }
+
+  .background-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Black with 50% transparency */
+    z-index: 1; /* Place the overlay below the content */
+}
+
+.background-section > * {
+    position: relative;
+    z-index: 2; /* Ensure the content is above the overlay */
+}
+  
