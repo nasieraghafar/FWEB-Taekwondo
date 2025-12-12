@@ -2,6 +2,8 @@
 
 A web application developed using React. An individual project done during year 2 semester 2 of polytechnic. This was done for the module 'Fullstack Web Development'
 
+Tech Stack: MongoDB, Express JS, React, Node
+
 Features: Login, View/Add Members, Events, Mark Attendance
 
 <img width="450" height="917" alt="TKD Login" src="https://github.com/user-attachments/assets/128c7cc7-7d72-48a6-98e9-2eb9606acb2c" />
